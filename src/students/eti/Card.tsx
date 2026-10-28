@@ -6,9 +6,16 @@ export default function EtiCard({ student, onClick }: CardProps) {
     <div onClick={onClick} className={`joke-card ${styles.card}`}>
       <span className={styles.icon} aria-hidden="true">🤵</span>
       <h2 className={styles.title}>{student.jokeTitle}</h2>
-      <a className={styles.name} href="mailto:eti7671@gmail.com" onClick={(event) => event.stopPropagation()}>
-        {student.name} · eti7671@gmail.com
+      <a className={styles.name} href={`mailto:${student.email}`} onClick={(event) => event.stopPropagation()}>
+        {student.name} · {student.email}
       </a>
+      {student.teamProjectUrl ? (
+        <a className={styles.team} href={student.teamProjectUrl} onClick={(event) => event.stopPropagation()}>
+          צוות {student.teamName}
+        </a>
+      ) : (
+        <span className={styles.team}>צוות {student.teamName}</span>
+      )}
       <span className={styles.action}>לבדיחה ←</span>
     </div>
   );
