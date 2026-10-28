@@ -6,7 +6,16 @@ export default function YaelCard({ student, onClick }: CardProps) {
     <div onClick={onClick} className={`joke-card ${styles.card}`}>
       <span className={styles.icon} aria-hidden="true">🧮</span>
       <h2 className={styles.title}>{student.jokeTitle}</h2>
-      <p className={styles.name}>{student.name}</p>
+      <a className={styles.name} href={`mailto:${student.email}`} onClick={(event) => event.stopPropagation()}>
+        {student.name} · {student.email}
+      </a>
+      {student.teamProjectUrl ? (
+        <a className={styles.team} href={student.teamProjectUrl} onClick={(event) => event.stopPropagation()}>
+          צוות {student.teamName}
+        </a>
+      ) : (
+        <span className={styles.team}>צוות {student.teamName}</span>
+      )}
       <span className={styles.action}>לבדיחה ←</span>
     </div>
   );
