@@ -1,4 +1,4 @@
-.card { min-height: 250px; height: 100%; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .65rem; padding: 1.8rem 1.4rem; background: linear-gradient(145deg,#eef2ff,#c7d2fe); border: 1px solid rgba(79,70,229,.18); border-radius: 20px; box-shadow: 0 10px 25px rgba(79,70,229,.16); color: #312e81; text-align: center; overflow: hidden; }
+.card { min-height: 250px; height: 100%; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .65rem; padding: 1.8rem 1.4rem; background: linear-gradient(145deg,#eef2ff,#c7d2fe); border: 1px solid rgba(79,70,229,.18); border-radius: 20px; box-shadow: 0 10px 25px rgba(79,70,229,.16); color: #312e81; text-align: center; overflow: hidden; cursor: default; }
 .icon,
 .jokeIcon { font-size: 3.25rem; line-height: 1; }
 .title { margin: 0; font-size: clamp(1.2rem,3vw,1.5rem); z-index: 1; }
