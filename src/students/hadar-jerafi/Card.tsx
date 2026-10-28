@@ -4,8 +4,12 @@ import { CardProps } from "../../types";
 export default function HadarCard({ student, onClick }: CardProps) {
   return (
     <div onClick={onClick} className={`joke-card ${styles.card}`}>
+      <span className={styles.icon} aria-hidden="true">🍞</span>
       <h2 className={styles.title}>{student.jokeTitle}</h2>
-      <p className={styles.name}>{student.name}</p>
+      <a className={styles.name} href="mailto:Hadar0583229585@gmail.com" onClick={(event) => event.stopPropagation()}>
+        {student.name} · Hadar0583229585@gmail.com
+      </a>
+      <span className={styles.action}>לבדיחה ←</span>
     </div>
   );
 }
