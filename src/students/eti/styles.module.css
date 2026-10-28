@@ -1,93 +1,13 @@
-.card {
-  background: linear-gradient(160deg, #fff8e7 0%, #ffe0a3 100%);
-  border: 3px solid #f5a623;
-  box-shadow: 0 6px 20px rgba(245, 166, 35, 0.35);
-}
-
-.avatar {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
-
-.title {
-  font-size: 1.4rem;
-  color: #7a4800;
-  margin-bottom: 0.4rem;
-}
-
-.name {
-  font-size: 1rem;
-  color: #5a3400;
-  margin-bottom: 1rem;
-}
-
-.badge {
-  display: inline-block;
-  background: #f5a623;
-  color: #fff;
-  border-radius: 20px;
-  padding: 0.3rem 1rem;
-  font-size: 0.85rem;
-  font-weight: bold;
-}
-
-.jokePage {
-  min-height: 100vh;
-  padding: 2rem 1rem;
-  background: linear-gradient(135deg, #fff3cd, #ffd77a);
-  direction: rtl;
-}
-
-.jokeHeader {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.3rem;
-}
-
-.bigEmoji {
-  font-size: 5rem;
-}
-
-.jokeCard {
-  width: min(100%, 540px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.2rem;
-  background: #fff;
-  border-radius: 24px;
-  padding: clamp(1.5rem, 5vw, 3rem);
-  text-align: center;
-  box-shadow: 0 18px 45px rgba(122, 72, 0, 0.22);
-  color: #5a3400;
-}
-
-.jokeCard h2 {
-  font-size: clamp(1.2rem, 4vw, 1.55rem);
-  line-height: 1.5;
-  margin: 0;
-}
-
-.jokeCard p {
-  font-size: clamp(1.15rem, 3.5vw, 1.4rem);
-  line-height: 1.6;
-  margin: 0;
-}
-
-.backBtn {
-  background: #f5a623;
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  padding: 0.7rem 2rem;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
-  margin-top: 0.5rem;
-}
-
-.backBtn:hover {
-  background: #d4891a;
-}
+.card { min-height: 230px; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .65rem; padding: 1.8rem 1.4rem; background: linear-gradient(145deg,#fff3cd,#ffd77a); border: 1px solid rgba(245,166,35,.24); border-radius: 20px; box-shadow: 0 10px 25px rgba(122,72,0,.17); color: #5a3400; text-align: center; }
+.icon,
+.jokeIcon { font-size: 3.25rem; line-height: 1; }
+.title { margin: 0; font-size: clamp(1.2rem,3vw,1.5rem); }
+.name { margin: 0; color: #7a4800; font-size: 1rem; }
+.action,
+.backButton { margin-top: .4rem; border: 0; border-radius: 999px; padding: .65rem 1.35rem; background: #d4891a; color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
+.jokePage { min-height: 100vh; padding: 2rem 1rem; background: linear-gradient(145deg,#fff3cd,#ffd77a); color: #5a3400; direction: rtl; }
+.jokePanel { width: min(100%,570px); display: flex; flex-direction: column; align-items: center; gap: 1rem; padding: clamp(1.5rem,5vw,3rem); background: rgba(255,255,255,.8); border: 1px solid rgba(245,166,35,.2); border-radius: 24px; box-shadow: 0 22px 55px rgba(122,72,0,.18); text-align: center; }
+.jokeTitle { margin: 0; font-size: clamp(1.6rem,5vw,2.2rem); }
+.jokeText,
+.punchline { margin: 0; font-size: clamp(1.15rem,3.5vw,1.4rem); line-height: 1.6; }
+.punchline { color: #7a4800; font-weight: 700; }
