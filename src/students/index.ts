@@ -1,21 +1,29 @@
 import { Student } from "../types";
 
-import DanaDuviCard from "./dana-duvi/Card";
-import DanaDuviJokePage from "./dana-duvi/JokePage";
-
-import ChaniChanzinCard from "./chani-chanzin/Card";
-import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 import YaelCard from "./yael-malka/Card";
 import YaelJokePage from "./yael-malka/JokePage";
-import HadarJokePage from "./hadar-jerafi/JokePage";
 import HadarCard from "./hadar-jerafi/Card";
+import HadarJokePage from "./hadar-jerafi/JokePage";
+import DanaDuviCard from "./dana-duvi/Card";
+import DanaDuviJokePage from "./dana-duvi/JokePage";
+import ChaniChanzinCard from "./chani-chanzin/Card";
+import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
-
-
-// ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
-// כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
-// אסור להשתמש בפונקציית-sort! 
 const students: Student[] = [
+  {
+    id: "yael-malka",
+    name: "יעל מלכא",
+    jokeTitle: "מורה ותלמיד",
+    CardComponent: YaelCard,
+    JokePageComponent: YaelJokePage,
+  },
+  {
+    id: "hadar",
+    name: "הדר ג'ראפי",
+    jokeTitle: "הבדיחה המשעשעת שלי",
+    CardComponent: HadarCard,
+    JokePageComponent: HadarJokePage,
+  },
   {
     id: "dana-duvi",
     name: "דנה דובי",
@@ -30,20 +38,6 @@ const students: Student[] = [
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
   },
-  {
-  id: "yael-malka",
-  name: "יעל מלכא",
-  jokeTitle: "מורה ותלמיד",
-  CardComponent: YaelCard,
-  JokePageComponent: YaelJokePage,
-  },
-  {
-  id: "hadar",
-  name: "הדר ג'ראפי",
-  jokeTitle: "הבדיחה המשעשעת שלי",
-  CardComponent: HadarCard,
-  JokePageComponent: HadarJokePage,
-},
 ];
 
 export default students;
